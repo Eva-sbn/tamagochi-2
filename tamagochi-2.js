@@ -1,25 +1,30 @@
 
     class tamagochi {
-        name = 'Tim';
-        food = 4;
-        energy = 5;
-        mood = 3;
+        constructor(name,food,energy,mood) {
+        this.name = name;
+        this.food = food;
+        this.energy = energy;
+        this.mood = mood;
+        };
         setName (name) {
             this.name = name
         };
         eat(){
             if(this.food < 5){
-                this.food++ && this.mood--
+                this.food++ 
+                this.mood--
             }
         };
         sleep(){
             if(this.energy < 5){
-                this.energy++ && this.food--
+                this.energy++
+                this.food--
             }
         };
         play(){
             if(this.mood < 5){
-                this.mood++ && this.energy--
+                this.mood++
+                this.energy--
             }
         };
         getStatus(){
